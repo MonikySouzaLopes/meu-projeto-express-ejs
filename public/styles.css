@@ -1,0 +1,20 @@
+body {
+  background: rgb(255, 210, 218);
+  }
+  
+
+.titulo{
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 480%;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.flex-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
