@@ -1,5 +1,5 @@
 body {
-  background: rgb(255, 210, 218);
+  background: linear-gradient(to right, rgb(52, 228, 213), rgb(255, 104, 210));
   }
   
 
@@ -7,6 +7,7 @@ body {
     text-align: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 480%;
+    
 }
 
 img{
@@ -18,3 +19,4 @@ img{
     display: flex;
     justify-content: space-around;
 }
+
