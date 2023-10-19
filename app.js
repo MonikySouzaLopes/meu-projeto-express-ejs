@@ -5,6 +5,12 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+const produtos = [
+  {id: 1, nome: "DEFINIÇÃO INTENSA", preco:"30", descricao: "CREME DE PENTEAR SALON LINE 1000g", imagem: "produto1.png"},
+  {id: 2, nome: "INVIGO BLONDE RECHARGE DUO", preco:"150", descricao: "KIT WELLA PROFESSIONAIS (2 PRODUTOS)", imagem: "produto2.png"},
+
+]
+
 app.get('/', (req, res) => {
   res.render('index', { message: 'Olá, Mundo!' });
 });
