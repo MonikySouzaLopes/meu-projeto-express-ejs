@@ -18,8 +18,15 @@ const produtos = [
   {id: 10, nome: "#Todecacho", preco:"120", descricao: "Kit Salon Line #todecacho Babosa", imagem: "produto10.png"}
 ]
 
+function buscarProdutoPorID(id){
+  const produto = produtos.find(produto => produto.id == id);
+  return produto || null 
+  }
+
+
+
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render('index', {produtos});
 });
 
 app.get('/produto1', (req, res) => {
