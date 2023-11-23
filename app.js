@@ -23,14 +23,12 @@ function buscarProdutoPorID(id){
   return produto || null 
   }
 
-
-
 app.get('/', (req, res) => {
   res.render('index', {produtos});
 });
 
-app.get('/produto1', (req, res) => {
-  res.render('produto1');
+app.get('/:produto/:id', (req, res) => {
+  res.render('req.params.produto', 'req.params.produto' ) ;
 });
 
 app.get('/produto2', (req, res) => {
