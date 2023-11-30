@@ -8,6 +8,7 @@
 
 
   <h1 class="titulo">Produtos para your hair</h1>
+  
   <div class="flex-conteiner">
 
     <%for (let produto of produtos) { %>
@@ -18,12 +19,13 @@
      
         <p><strong><%= produto.nome %> </strong></p>
             <p><strong>Preço:</strong><%= produto.preco %> </p>
-            <p><strong>Descrição:</strong><%= produto.descricao %> </p>
-            <a href="/produto">
+          
+            <a href="/produto/<%= produto.id %>">
             <button style="background: pink">Ver mais</button> 
             </a>
-    <% } %>
+            <% } %>
   </div>
+  
 
  
       

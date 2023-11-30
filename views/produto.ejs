@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projeto Express e EJS</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body> 
+  <h1 class="titulo">Detalhes do produto</h1>
+  
+  <div class="flex-conteiner">
+  <div>
+    
+      <img class="imagem"    src="/imagem/<%= produto.imagem %> "alt="">
+   
+      <p><strong><%= produto.nome %> </strong></p>
+          <p><strong>Preço:</strong><%= produto.preco %> </p>
+          <p><strong>Descrição:</strong><%= produto.descricao %> </p>
+          
+        
+   
+</div>
+</div>
+</body>
+</html>

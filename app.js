@@ -27,21 +27,11 @@ app.get('/', (req, res) => {
   res.render('index', {produtos});
 });
 
-app.get('/:produto/:id', (req, res) => {
-  res.render('req.params.produto', 'req.params.produto' ) ;
+app.get('/produto/:id', (req, res) => {
+  const produto = buscarProdutoPorID(req.params.id);
+  res.render('produto', {produto} ) ;
 });
 
-app.get('/produto2', (req, res) => {
-  res.render('produto2');
-});
-
-app.get('/produto3', (req, res) => {
-  res.render('produto3');
-});
-
-app.get('/produto4', (req, res) => {
-  res.render('produto4');
-});
 
 
 
